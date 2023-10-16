@@ -60,7 +60,7 @@ app.put('/markComplete', (request, response) => {
     .catch(error => console.error(error))
 
 })
-
+/*
 app.put('/markUnComplete', (request, response) => {
     db.collection('todos').updateOne({thing: request.body.itemFromJS},{
         $set: {
@@ -76,7 +76,7 @@ app.put('/markUnComplete', (request, response) => {
     })
     .catch(error => console.error(error))
 
-})
+}) */
 
 app.delete('/deleteItem', (request, response) => {
     db.collection('todos').deleteOne({thing: request.body.itemFromJS})
